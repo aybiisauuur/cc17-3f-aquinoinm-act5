@@ -10,22 +10,22 @@
 
     <FrameLayout
         android:id="@+id/picFrame"
-        android:layout_width="275dp"
-        android:layout_height="320dp"
+        android:layout_width="246dp"
+        android:layout_height="325dp"
         android:layout_marginTop="28dp"
         android:background="@color/white"
         android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintVertical_bias="0.123">
 
         <ImageView
             android:id="@+id/artGalleryImage"
-            android:layout_width="220dp"
-            android:layout_height="300dp"
+            android:layout_width="196dp"
+            android:layout_height="278dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:src="@drawable/art1"></ImageView>
