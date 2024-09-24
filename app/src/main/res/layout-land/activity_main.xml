@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/picFrame"
+        android:layout_width="275dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/artGalleryImage"
+            android:layout_width="220dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/art1"></ImageView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rectCaption"
+        android:layout_width="362dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="140dp"
+        android:background="#bbbbbb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/picFrame">
+
+        <TextView
+            android:id="@+id/picCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:letterSpacing="0.15"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Caption" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="636dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#61A4AD"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectCaption"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#61A4AD"
+        android:text="PREVIOUS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectCaption"
+        app:layout_constraintVertical_bias="0.444" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
